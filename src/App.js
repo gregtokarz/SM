@@ -5,11 +5,13 @@ import _ from 'lodash';
 
 function App() {
   const _ = require("lodash");
-  let mean = _.mean([15, 7, 38, 46, 82]);
-  console.log(mean);
-  
-  return (
+  let table = [15, 7, 38, 46, 82];
 
+  console.log("Srednia "+_.mean(table));
+  console.log("Maksymalna wartosc "+_.max(table));
+  console.log("Minimalna wartosc "+_.min(table));
+
+  return (
     <div className="App">
       <header className="App-header">
 
