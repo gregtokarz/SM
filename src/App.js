@@ -1,10 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import _ from 'lodash';
+
 
 function App() {
+  const _ = require("lodash");
+  let mean = _.mean([15, 7, 38, 46, 82]);
+  console.log(mean);
+  
   return (
+
     <div className="App">
       <header className="App-header">
+
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
